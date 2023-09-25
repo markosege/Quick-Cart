@@ -1,0 +1,22 @@
+{
+    "name": "george/module-quickcart",
+    "description": "Quick cart to show the mini cart",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "markosege@yahoo.com",
+            "name": "George"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "George\\QuickCart\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

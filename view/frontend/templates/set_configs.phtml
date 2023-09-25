@@ -1,0 +1,13 @@
+<?php
+$_helper    =   $this->helper('George\QuickCart\Helper\Data'); ?>
+
+<?php if($_helper->quickcartIsEnabled()): ?>
+<script>
+    window.openMinicart = '<?php /* @escapeNotVerified */ echo $_helper->openMinicart()?>';
+    requirejs(['jquery', 'george_quickcart'], function ($, quickcart) {
+        $(document). ready(function () {
+            quickcart. initialize();
+        })
+    })
+</script>
+<?php endif; ?>
